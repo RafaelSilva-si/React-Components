@@ -2,14 +2,12 @@ import React from 'react';
 import * as Utils from '../../styles/utils';
 import CardJobs from '../../components/JobCategory/CardsJobs';
 import {FaPencilRuler} from 'react-icons/fa';
-import {GrAnnounce} from 'react-icons/gr';
 
 class JobCategorie extends React.Component {
     constructor(props) {
         super(props)
     };
     render() {
-        const { input } = this.props;
         return (
             <>
                 <Utils.boxItem>

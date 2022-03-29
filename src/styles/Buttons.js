@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button.attrs({
-    className: 'btn'
+    className: `btn`
 })`
     border-radius: 0px;
     font-family: 'Lato', sans-serif;
