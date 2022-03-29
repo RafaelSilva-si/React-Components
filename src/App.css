@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;600&family=Lato:wght@100;300;400;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: 'Epilogue', sans-serif;
+  font-size: calc(10px + 2vmin);
+  color: #7B61FF;
+}
+
