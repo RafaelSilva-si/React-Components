@@ -21,3 +21,24 @@ export const Button = styled.button.attrs({
     }
 `
 
+export const ButtonsFilter = styled.button.attrs({
+    className: 'btn'
+})`
+    border-radius: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color:  #25324B;
+    background-color: '#FFFFFF';
+    border: ${props => props.link? 'none' : '1px solid #D6DDEB'};
+    box-sizing: border-box;
+    margin: 10px;
+    padding: ${props => props.LG && '14px 27px' || props.MD && '12px 24px' || props.SM && '10px 21px'};
+
+`
+
+export const labelSortBy = styled.span`
+    font-size: 12px;
+    line-height: 34px;
+    color: #7C8493;
+`
+

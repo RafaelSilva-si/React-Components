@@ -2,8 +2,10 @@ import React from 'react';
 import Inputs from '../../components/inputs/Inputs';
 import InputIcon from '../../components/inputs/inputIcon';
 import InputDropdown from '../../components/inputs/InputDropdown';
+import ButtonsFilter from '../../components/inputs/FilterSorts';
+import SortBy from '../../components/inputs/SortBy';
 
-import { MdSearch } from 'react-icons/md';
+import { MdSearch, MdOutlineFilterList } from 'react-icons/md';
 import * as Utils from '../../styles/utils';
 
 class InputPage extends React.Component {
@@ -31,7 +33,15 @@ class InputPage extends React.Component {
                         </div>
                         <div className="col-md-3">
                             <InputDropdown
+                                options={[{ id: 1, label: 'One' }, { id: 2, label: 'Two' }]}
                                 {...input}
+                            />
+                        </div>
+                        <div className="col-md-3">
+                            <ButtonsFilter
+                                label='Caption'
+                                onClick={() => alert('oi')}
+                                icon={<MdSearch />}
                             />
                         </div>
                     </div>
@@ -50,6 +60,14 @@ class InputPage extends React.Component {
                                 {...input}
                             />
                         </div>
+                        <div className="col-md-3"></div>
+                        <div className="col-md-3">
+                            <ButtonsFilter
+                                label='Caption'
+                                onClick={() => alert('oi')}
+                                icon={<MdOutlineFilterList />}
+                            />
+                        </div>
                     </div>
                     <div className="row pt-2">
                         <div className="col-md-3">
@@ -65,6 +83,10 @@ class InputPage extends React.Component {
                                 icon={<MdSearch />}
                                 {...input}
                             />
+                        </div>
+                        <div className="col-md-3"></div>
+                        <div className="col-md-3">
+                            <SortBy />
                         </div>
                     </div>
 
@@ -79,7 +101,7 @@ InputPage.defaultProps = {
         placeholder: "Insira um texto aqui",
         id: 'teste',
         name: 'teste'
-    }
+    },
 }
 
 export default InputPage;
